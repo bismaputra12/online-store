@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Ecommerce</h1>
+      <div class="mini-cart" onclick="location.href='cart.html';">
+        <span class="bubble-count">0</span>
+        <img src="images/icon-cart.png" alt="Shopping Cart Icon">
+      </div>
+      
+    </header>
+    <main>
+      <section class="product-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="images/product1.png" alt="Product Image" class="ProductImage"></td>
+              <td>Nike Outdoor Green</td>
+              <td>$10.00</td>
+              <td><button class="minus-button">-</button><input type="text" value="0"><button class="plus-button">+</button></td>
+              <td><button class="add-to-cart-button" onclick="showNotification()">Add to Cart</button></td>
+            </tr>
+            <tr>
+              <td><img src="images/product2.png" alt="Product Image" class="ProductImage"></td>
+              <td>Nike Outdoor Black</td>
+              <td>$20.00</td>
+              <td><button class="minus-button">-</button><input type="text" value="0"><button class="plus-button">+</button></td>
+              <td><button class="add-to-cart-button" onclick="showNotification()">Add to Cart</button></td>
+            </tr>
+            <tr>
+              <td><img src="images/product3.png" alt="Product Image" class="ProductImage"></td>
+              <td>Nike Outdoor Orange</td>
+              <td>$30.00</td>
+              <td><button class="minus-button">-</button><input type="text" value="0"><button class="plus-button">+</button></td>
+              <td><button class="add-to-cart-button" onclick="showNotification()">Add to Cart</button></td>
+            </tr>
+            <tr>
+              <td><img src="images/product4.png" alt="Product Image" class="ProductImage"></td>
+              <td>Nike Outdoor Blue</td>
+              <td>$40.00</td>
+              <td><button class="minus-button">-</button><input type="text" value="0"><button class="plus-button">+</button></td>
+              <td><button class="add-to-cart-button" onclick="showNotification()">Add to Cart</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Ecommerce</p>
+    </footer>
+    <script src="js/script.js"></script>

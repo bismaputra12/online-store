@@ -1,0 +1,390 @@
+
+
+body {
+  background: linear-gradient(-45deg, #2b2d39, #2f313e, #343748, #2b2d39);
+  animation: gradient 10s ease infinite;
+}
+
+header {
+  background-color: #343748;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+header:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+h1 {
+  font-size: 26px;
+  color: rgb(255, 234, 0);
+  margin: 0;
+}
+
+.mini-cart {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.mini-cart:hover {
+  transform: scale(1.1);
+}
+
+.bubble-count {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #F05454;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin-left: 13px;
+}
+
+.mini-cart img {
+  width: 30px;
+  height: 30px;
+  margin-left: 0px;
+}
+
+/*section product Table dekstop*/
+.product-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+thead {
+  background-color: #343748;
+  font-weight: bold;
+  color: rgb(255, 234, 0);
+}
+
+th,
+td {
+  padding: 10px;
+}
+tr:hover {
+  padding: 10px;
+  background: linear-gradient(-45deg, #e93a60, #f94a19, #e64316, #78031d);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+td {
+  vertical-align: middle;
+}
+tr{
+  color: rgb(255, 234, 0);
+}
+
+.ProductImage {
+  height: 200px;
+  width: 200px;
+}
+.ProductImage:hover {
+  transform: rotate(45deg) scale(1.5);
+  transition: transform 0.5s ease;
+}
+
+
+.minus-button,
+.plus-button {
+  font-size: 1.5rem;
+  background-color: #f9f9f900;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+  color: rgb(255, 234, 0);
+}
+
+.minus-button:hover,
+.plus-button:hover {
+  transform: rotate(45deg) scale(1.5);
+  transition: transform 0.5s ease;
+  
+}
+
+input[type="text"] {
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 0 10px;
+  padding: 5px;
+
+}
+
+.add-to-cart-button {
+  font-size: 1.2rem;
+  background-color: rgb(255, 234, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.add-to-cart-button:hover {
+  background-color: rgb(255, 234, 0);
+  transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bubble-count {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6600;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 5px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 0px solid #444;
+}
+footer {
+  margin-top: 30px;
+  background-color: #343748;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: rgb(255, 234, 0)
+
+}
+
+table img {
+  height: 150px;
+  width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style untuk button */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-primary {
+  font-size: 1.2rem;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  background-color: #2e2e2e;
+  transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+  background-color: #1abc9c;
+  width: 40%;
+  padding: 5px 5px;
+}
+
+.btn-danger:hover {
+  background-color: #2e2e2e;
+  transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success {
+  font-size: 1.2rem;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.btn-success:hover {
+  background-color: #2e2e2e;
+  transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+table img:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+
+/*STYLE NOTIFICATION*/
+.notification {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 9999;
+  max-width: 400px;
+  text-align: center;
+}
+
+.notification p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.notification button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.notification button:hover {
+  transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #555;
+}
+
+
+.continue-button {
+  background-color: #4B5563;
+  color: #F9FAFB;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.continue-button:hover {
+  background-color: #1F2937;
+}
+
+
+
+/*Style Checkout Page*/
+
+
+.form-container {
+  margin: 50px auto;
+  padding: 30px;
+}
+
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+form:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: start;
+}
+
+form textarea {
+  resize: none;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: rgb(255, 234, 0);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+form button:hover {
+  transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #555;
+}
